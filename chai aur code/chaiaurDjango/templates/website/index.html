@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Home Page</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="description" content="A plain HTML home page (no CSS or JS)." />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>MySite</h1>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section>
+        <h2>Welcome</h2>
+        <p>
+          Welcome to this simple HTML-only homepage. It's plain by design so you
+          can add your own CSS and scripts later.
+        </p>
+        <p>
+          <a href="#contact">Get in touch</a>
+          <a href="#features">See features</a>
+        </p>
+      </section>
+
+      <section id="features">
+        <h2>Features</h2>
+        <ul>
+          <li>Semantic HTML structure</li>
+          <li>Accessible headings and links</li>
+          <li>Easy to customize</li>
+        </ul>
+      </section>
+
+      <section id="about">
+        <h2>About this template</h2>
+        <p>
+          This file is a starting point for learning HTML. Save it as
+          <code>index.html</code> and open in your browser.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="name"
+              >Name<br />
+              <input id="name" name="name" type="text" required />
+            </label>
+          </p>
+          <p>
+            <label for="email"
+              >Email<br />
+              <input id="email" name="email" type="email" required />
+            </label>
+          </p>
+          <p>
+            <label for="message"
+              >Message<br />
+              <textarea id="message" name="message" rows="6"></textarea>
+            </label>
+          </p>
+          <p><button type="submit">Send</button></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year">2025</span> MySite. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
